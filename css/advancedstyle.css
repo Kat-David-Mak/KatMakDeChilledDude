@@ -1,0 +1,119 @@
+header {
+  background-color: #192841;
+  color: #fff;
+  display: flex;
+  padding: 25px;  
+  justify-content: flex-end;
+  transition: all 0.5s ease-in-out;
+   
+}
+
+header h1 {
+  margin-right: 600px;
+font-size: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 80px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+aside {
+  background-color: #192841;
+  color: #fff;
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  top: 85px;
+  left: 0;
+  padding: 10px;
+}
+
+aside nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+aside nav ul ul {
+  display: none;
+}
+
+aside nav ul li:hover > ul {
+  display: block;
+}
+
+main {
+  margin-left: 200px;
+  padding: 50px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  aside {
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+
+  aside nav ul li a {
+    display: none;
+  }
+
+  aside nav ul ul {
+    display: none;
+  }
+
+  aside nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  header nav ul li a {
+    font-size: 0.8em;
+  }
+
+  aside nav ul li a {
+    font-size: 0.8em;
+  }
+}
